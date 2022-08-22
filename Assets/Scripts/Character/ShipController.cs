@@ -1,4 +1,3 @@
-using System;
 using Main;
 using Mechanics;
 using Network;
@@ -109,8 +108,14 @@ namespace Characters
         [ServerCallback]
         private void OnTriggerEnter(Collider other)
         {
-            RpcGoToStartPos(_startPos);
-            
+            if (other.CompareTag("Cristal"))
+            {
+                other.gameObject.SetActive(false);
+            }
+            else
+            {
+                RpcGoToStartPos(_startPos);  
+            }
         }
 
         [ClientRpc]
@@ -118,7 +123,7 @@ namespace Characters
         {
             gameObject.SetActive(false);
             transform.position = pos;
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
     }
 }

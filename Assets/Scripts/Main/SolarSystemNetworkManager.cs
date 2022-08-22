@@ -7,7 +7,6 @@ namespace Main
 {
     public class SolarSystemNetworkManager : NetworkManager
     {
-        [SerializeField] private string playerName;
         [SerializeField] private InputPlayerName _inputPlayerName;
         private Dictionary<int,ShipController> _players = new Dictionary<int, ShipController>();
 
