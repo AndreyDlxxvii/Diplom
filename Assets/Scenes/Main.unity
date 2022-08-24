@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 361298991}
   - component: {fileID: 361298992}
   - component: {fileID: 361298993}
+  - component: {fileID: 361298994}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -1184,7 +1185,6 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
-  playerName: MyPlayer
   _inputPlayerName: {fileID: 2005397334}
 --- !u!114 &361298993
 MonoBehaviour:
@@ -1202,6 +1202,28 @@ MonoBehaviour:
   showGUI: 1
   offsetX: 0
   offsetY: 0
+--- !u!114 &361298994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361298989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedb3552be820d044acb19e6be15a181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _planets:
+  - {fileID: 1245412067}
+  - {fileID: 1591434086}
+  - {fileID: 1540168946}
+  - {fileID: 45377279}
+  - {fileID: 700499637}
+  - {fileID: 1329998758}
+  - {fileID: 1797633357}
+  - {fileID: 1396188070}
+  _cristal: {fileID: 5972070195641460978, guid: 1a65c58c63ce31d4bbf8d550ce64db29, type: 3}
 --- !u!1 &459048209
 GameObject:
   m_ObjectHideFlags: 0
