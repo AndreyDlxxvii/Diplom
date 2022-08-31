@@ -88,8 +88,8 @@ partial class CameraRenderer
             filteringSettings);
         _context.DrawSkybox(_camera);
       
-        ShadowDrawingSettings settings = new ShadowDrawingSettings(_cullingResult, 0);
-        _context.DrawShadows(ref settings);
+        // ShadowDrawingSettings settings = new ShadowDrawingSettings(_cullingResult, 0);
+        // _context.DrawShadows(ref settings);
         
         sortingSettings.criteria = SortingCriteria.CommonTransparent;
         drawingSettings.sortingSettings = sortingSettings;
